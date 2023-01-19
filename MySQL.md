@@ -42,13 +42,19 @@ Note: Using the password directly in the command should be avoided, as it could 
     );
 ```
 
-#### Properties/ Data Types of tables and colums
+#### Definign properties/ data types of tables and colums
 ```
 ▶ id INT NOT NULL AUTO_INCREMENT;
 ▶ PRIMARY KEY (id)
 ```
+ - `NOT NULL` - constraint ensures that a particular column is never left empty 'i.e., required field'.
  - `AUTO INCREMENT`- automatically increments the id by one every time a new item is added to the table.
  - `PRIMARY KEY` - integer value used to uniquely identify each record in the table.
 
+`▶  username VARCHAR(100) UNIQUE NOT NULL;`
+
 
 ---
+
+#### Other Learning Resources:
+[MySQL Security Documentation](https://dev.mysql.com/doc/refman/8.0/en/security-guidelines.html)
