@@ -28,4 +28,27 @@ Note: Using the password directly in the command should be avoided, as it could 
 
 #### Retrieve all exiting databases
 `▶ SHOW DATABASES;`
+ 
+---
 
+#### Create a table with colums
+```
+▶ CREATE TABLE users (
+  ▶ id INT,
+  ▶ username VARCHAR(100),
+  ▶ password VARCHAR(100),
+  ▶ pin INT(10)
+  ▶ date_of_joining DATETIME
+    );
+```
+
+#### Properties/ Data Types of tables and colums
+```
+▶ id INT NOT NULL AUTO_INCREMENT;
+▶ PRIMARY KEY (id)
+```
+ - `AUTO INCREMENT`- automatically increments the id by one every time a new item is added to the table.
+ - `PRIMARY KEY` - integer value used to uniquely identify each record in the table.
+
+
+---
