@@ -1,6 +1,6 @@
-# MySQL
-SQL can be used to perform the following actions:
+# MySQL Quick Reference (Cheet Sheat)
 
+**MySQL can be used to perform the following actions:**
 - Retrieve data
 - Update data
 - Delete data
@@ -44,11 +44,11 @@ Note: Using the password directly in the command should be avoided, as it could 
 ```
 
 #### Defining data types of the table and its colums
- - `VARCHAR(24)` - a string with a length of 24 characters (maximum length can be upto 65535 characters).
- - `INT(8)` - an integer with a length of 8 characters (maximum value can be upto 10 characters).
+ - `VARCHAR(24)` - a string with a length of 24 characters *(maximum length can be upto 65535 characters)*.
+ - `INT(8)` - an integer with a length of 8 characters *(maximum value can be upto 10 characters)*.
  - `UNIQUE` - constraint to ensures that the inserted item are always unique.
  - `NOT NULL` - constraint ensures that a particular column is never left empty 'i.e., required field'.
- - `DEFAULT` - used to specify the default value, automatically insterted.
+ - `DEFAULT` - used to specify the default value *(automatically insterted)*.
  - `AUTO INCREMENT`- automatically increments the id by one every time a new item is added to the table.
  - `PRIMARY KEY` - integer value used to uniquely identify each record in the table.
  - `NOW()` - returns the current date and time.
