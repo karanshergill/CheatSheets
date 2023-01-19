@@ -34,11 +34,12 @@ Note: Using the password directly in the command should be avoided, as it could 
 #### Create a table with colums
 ```
 ▶ CREATE TABLE users (
-  ▶ id INT,
-  ▶ username VARCHAR(100),
-  ▶ password VARCHAR(100),
-  ▶ pin INT(10)
-  ▶ date_of_joining DATETIME
+    id INT NOT NULL AUTO_INCREMENT,
+    username VARCHAR(100) UNIQUE NOT NULL,
+    password VARCHAR(100) NOT NULL,
+    pin INT(8) NOT NULL,
+    date_of_registration DATETIME DEFAULT NOW(),
+    PRIMARY KEY (id)
     );
 ```
 
