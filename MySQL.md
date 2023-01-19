@@ -1,4 +1,12 @@
 # MySQL
+SQL can be used to perform the following actions:
+
+- Retrieve data
+- Update data
+- Delete data
+- Create new tables and databases
+- Add / remove users
+- Assign permissions to these users
 
 #### Login to MySQL database (Local Host)
 `▶ mysql -u root -p` or `▶ mysql -u root -p<password>`
