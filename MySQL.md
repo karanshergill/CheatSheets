@@ -56,4 +56,6 @@ Note: Using the password directly in the command should be avoided, as it could 
 ---
 
 #### Other Learning Resources:
+- [MySQL Tutorial](https://www.mysqltutorial.org/)
+- [Everything You Need To Know About SQL Injection](https://www.sqlinjection.net/)
 - [MySQL Security Documentation](https://dev.mysql.com/doc/refman/8.0/en/security-guidelines.html)
