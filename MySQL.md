@@ -35,7 +35,7 @@ Note: Using the password directly in the command should be avoided, as it could 
 ```
 ▶ CREATE TABLE users (
     id INT NOT NULL AUTO_INCREMENT,
-    username VARCHAR(100) UNIQUE NOT NULL,
+    username VARCHAR(24) UNIQUE NOT NULL,
     password VARCHAR(100) NOT NULL,
     pin INT(8) NOT NULL,
     date_of_registration DATETIME DEFAULT NOW(),
@@ -43,19 +43,17 @@ Note: Using the password directly in the command should be avoided, as it could 
     );
 ```
 
-#### Definign properties/ data types of tables and colums
-```
-▶ id INT NOT NULL AUTO_INCREMENT;
-▶ PRIMARY KEY (id)
-```
+#### Defining data types of the table and its colums
+ - `VARCHAR(24)` - a string with a length of 24 characters (maximum length can be upto 65535 characters).
+ - `INT(8)` - an integer with a length of 8 characters (maximum value can be upto 10 characters).
+ - `UNIQUE` - constraint to ensures that the inserted item are always unique.
  - `NOT NULL` - constraint ensures that a particular column is never left empty 'i.e., required field'.
+ - `DEFAULT` - used to specify the default value, automatically insterted.
  - `AUTO INCREMENT`- automatically increments the id by one every time a new item is added to the table.
  - `PRIMARY KEY` - integer value used to uniquely identify each record in the table.
-
-`▶  username VARCHAR(100) UNIQUE NOT NULL;`
-
+ - `NOW()` - returns the current date and time.
 
 ---
 
 #### Other Learning Resources:
-[MySQL Security Documentation](https://dev.mysql.com/doc/refman/8.0/en/security-guidelines.html)
+- [MySQL Security Documentation](https://dev.mysql.com/doc/refman/8.0/en/security-guidelines.html)
