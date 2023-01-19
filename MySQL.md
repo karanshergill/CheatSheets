@@ -16,6 +16,8 @@ SQL can be used to perform the following actions:
 #### Login to MySQL database (Remote Host)
 `▶ mysql -u root -h database.example.com -P 3306 -p` or `▶ mysql -u root -h database.example.com -P 3306 -p<password>`
 
+Note: Using the password directly in the command should be avoided, as it could lead to the password being kept in logs and terminal history.
+
 ---
 
 #### Create a new database
