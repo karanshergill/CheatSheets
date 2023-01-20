@@ -9,6 +9,7 @@
 - Assign permissions to these users
 
 ---
+## Login
 
 #### Login to MySQL database (Local Host)
 `▶ mysql -u root -p` or `▶ mysql -u root -p<password>`
@@ -52,6 +53,8 @@ Note: Using the password directly in the command should be avoided, as it could 
  - `AUTO INCREMENT`- automatically increments the id by one every time a new item is added to the table.
  - `PRIMARY KEY` - integer value used to uniquely identify each record in the table.
  - `NOW()` - returns the current date and time.
+
+*Note: String and date data types should be surrounded by single quote (') or double quotes ("), while numbers can be used directly.*
 
 ---
 
@@ -112,6 +115,62 @@ Note: Using the password directly in the command should be avoided, as it could 
 ▶ UPDATE table_name SET column1=newvalue1, column2=newvalue2, ... WHERE <condition>;
 ```
 - `WHERE` - use with UPDATE, in order to specify the column name/s or a condition.
+
+---
+
+#### Query Results
+
+Sort Results
+```
+▶ SELECT * FROM users ORDER BY password;
+```
+- `ORDER BY` - sort the results of any query using ORDER BY and specifying the column to sort by (by default sorting is done in ascending order).
+
+```
+▶ SELECT * FROM users ORDER BY password DESC;
+```
+- `ASC` or `DESC` - sort the results by ascending or descending order.
+
+```
+▶ SELECT * FROM users ORDER BY password DESC, id ASC;
+```
+- `ASC` and `DESC`- sort by multiple columns, to have a secondary sort for duplicate values in one column
+
+
+Limit Results
+```
+▶ SELECT * FROM users LIMIT 2;
+```
+- `LIMIT <integer>` - limits the number of results returned by the query to the specified integer value.
+
+```
+▶ SELECT * FROM users LIMIT 1, 2;
+```
+- `LIMIT <integer1>, <integer2>` - sets the offset, will return the records specified within the range. The offset marks the order of the first record to be included, starting from 0.
+
+Filter Searches/ Specific Results/ Patterns
+```
+▶ SELECT * FROM table_name WHERE <condition>;
+```
+- `WHERE` -  filter or search for specific data.
+Examples:
+```
+▶ SELECT * FROM users WHERE id > 1;
+▶ SELECT * FROM users WHERE username = 'admin';
+```
+
+```
+▶ SELECT * FROM logins WHERE username LIKE 'admin%';
+```
+- `LIKE` - enabling selecting records by matching a certain pattern.
+- `%` - acts as a wildcard and matches all characters after admin. It is used to match zero or more characters.
+
+```
+▶ SELECT * FROM logins WHERE username like '___';
+```
+- `_` - used to match exactly one character. Three underscores represent three characters.
+
+---
 
 #### Other Learning Resources:
 - [MySQL Tutorial](https://www.mysqltutorial.org/)
