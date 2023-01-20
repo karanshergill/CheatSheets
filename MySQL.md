@@ -31,7 +31,7 @@ Note: Using the password directly in the command should be avoided, as it could 
  
 ---
 
-#### Create a table with colums
+#### Create a table with some columns
 ```
 ▶ CREATE TABLE users (
     id INT NOT NULL AUTO_INCREMENT,
@@ -54,6 +54,44 @@ Note: Using the password directly in the command should be avoided, as it could 
  - `NOW()` - returns the current date and time.
 
 ---
+
+#### MySQL Statements
+- `SELECT` - retrive records from the table.
+- `INSERT` - add records to the given table.
+- `DROP` - permanently delete tables and databases.
+- `ALTER` - change the name of any table and any of its fields or to delete or add a new column to an existing table.
+- `UPDATE` - used to update specific records within a table, based on certain conditions.
+
+**SELECT** Syntax:
+```
+▶ SELECT * FROM table_name; # select all(*) columns from the given table
+   OR
+▶ SELECT column1, column2 FROM table_name; # select specific columns from the given table
+```
+
+**INSERT** Syntax:
+```
+INSERT INTO table_name(column2, column3, ...) VALUES (column2_value, column3_value, ...);
+```
+- `*` - wildcard character, which means everything.
+- `column2, column3` - name of the columns in the table.
+- `column2_value, column3_value` - values of the records to be inserted.
+- `NOT-NULL` - values for the columns with this constraint cannot be left blank.
+- `DEFAULT` - values for the columns with this constraint can be left blank.
+
+
+**DROP** Syntax:
+```
+
+```
+**ALTER** Syntax:
+```
+
+```
+**UPDATE** Syntax:
+```
+
+```
 
 #### Other Learning Resources:
 - [MySQL Tutorial](https://www.mysqltutorial.org/)
