@@ -71,7 +71,7 @@ Note: Using the password directly in the command should be avoided, as it could 
 
 **INSERT** Syntax:
 ```
-INSERT INTO table_name(column2, column3, ...) VALUES (column2_value, column3_value, ...);
+▶ INSERT INTO table_name(column2, column3, ...) VALUES (column2_value, column3_value, ...);
 ```
 - `*` - wildcard character, which means everything.
 - `column2, column3` - name of the columns in the table.
@@ -82,16 +82,36 @@ INSERT INTO table_name(column2, column3, ...) VALUES (column2_value, column3_val
 
 **DROP** Syntax:
 ```
-
+▶ DROP TABLE table_name;
 ```
+- permanentlt deletes the table `table_name`.
+
 **ALTER** Syntax:
 ```
+▶ ALTER TABLE table_name ADD newColumn_name INT;
+```
+- creates a new column `newColumn_name` with the data types as integer within the given table `table_name`.
 
 ```
+▶ ALTER TABLE table_name RENAME COLUMN newColumn_name TO NewColumn_Name;
+```
+- renames the column `newColumn_name` to `NewColumn_Name` within the given `table_name`.
+
+```
+▶ ALTER TABLE table_name MODIFY NewColumn_Name DATE;
+```
+- modifies the data type of the given column `NewColumn_Name` to date within the given `table_name`.
+
+```
+▶ ALTER TABLE table_name DROP column_name;
+```
+- permanently delets the column from the given table name.
+
 **UPDATE** Syntax:
 ```
-
+▶ UPDATE table_name SET column1=newvalue1, column2=newvalue2, ... WHERE <condition>;
 ```
+- `WHERE` - use with UPDATE, in order to specify the column name/s or a condition.
 
 #### Other Learning Resources:
 - [MySQL Tutorial](https://www.mysqltutorial.org/)
