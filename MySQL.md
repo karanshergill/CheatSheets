@@ -172,6 +172,39 @@ Examples:
 
 ---
 
+#### MySQL Operators
+ - Logical Operators - `AND`, `OR`, `NOT`
+ - Logical Symbol Operators - `&&`, `||`, `!=` (AND, OR, NOT respectively.)
+
+**AND**
+```
+▶ SELECT 1 = 1 AND 'test' = 'test';
+```
+ - The AND operator takes in two conditions and returns true or false based on their evaluation: condition1 `AND` condition2. The result of the AND operation is true if and only if both condition1 and condition2 evaluate to true. In MySQL any non-zero value is considered true, and it usually returns the value 1 to signify true. 0 is considered false.
+
+**OR**
+```
+▶ SELECT 1 = 1 OR 'test' = 'abc';
+```
+ - The OR operator takes in two expressions and returns true when at least one of them evaluates to true
+
+**NOT**
+```
+▶ SELECT NOT 1 = 1;
+```
+ - The NOT operator simply toggles a boolean value 'i.e. true is converted to false and vice versa'.
+
+---
+
+#### Operator Precedence
+ - Division (/), Multiplication (*), and Modulus (%)
+ - Addition (+) and subtraction (-)
+ - Comparison (=, >, <, <=, >=, !=, LIKE)
+ - NOT (!)
+ - AND (&&)
+ - OR (||)
+
+---
 #### Other Learning Resources:
 - [MySQL Tutorial](https://www.mysqltutorial.org/)
 - [Everything You Need To Know About SQL Injection](https://www.sqlinjection.net/)
