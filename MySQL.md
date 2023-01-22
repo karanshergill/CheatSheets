@@ -197,7 +197,7 @@ Examples:
 ---
 
 #### Operator Precedence
- - Division (/), Multiplication (*), and Modulus (%)
+ - Division (/), Multiplication (\*), and Modulus (%)
  - Addition (+) and subtraction (-)
  - Comparison (=, >, <, <=, >=, !=, LIKE)
  - NOT (!)
