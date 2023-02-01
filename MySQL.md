@@ -194,6 +194,13 @@ Examples:
 ```
  - The NOT operator simply toggles a boolean value 'i.e. true is converted to false and vice versa'.
 
+**UNION**
+```
+▶ SELECT * FROM users UNION SELECT * FROM logins;
+```
+- The Union clause is used to combine results from multiple SELECT statements.
+- A UNION statement can only operate on SELECT statements with an equal number of columns.
+- An attempt to UNION two queries that have results with a different number of columns will return an error.
 ---
 
 #### Operator Precedence
