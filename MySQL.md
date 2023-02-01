@@ -200,7 +200,8 @@ Examples:
 ```
 - The Union clause is used to combine results from multiple SELECT statements.
 - A UNION statement can only operate on SELECT statements with an equal number of columns.
-- An attempt to UNION two queries that have results with a different number of columns will return an error.
+- The data types of the selected columns on all positions should be the same.
+- An attempt to UNION two queries that have results with a different number of columns or data types will return an error.
 ---
 
 #### Operator Precedence
