@@ -30,3 +30,12 @@
 ▶ dig @<NAME-SERVER-TO-QUERY> <FQDN> axfr 
 ```
 
+### Digging the Internet Protocol (IPv4)
+```
+▶ dig <FQDN> AAAA -4 +noall +additional
+```
+
+### Digging the Internet Protocol (IPv6)
+```
+▶ dig <FQDN> AAAA -6 +noall +additional
+```
