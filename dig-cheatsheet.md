@@ -39,3 +39,10 @@
 ```
 ▶ dig <FQDN> AAAA -6 +noall +additional
 ```
+
+### Digging Specific Ports
+```
+▶ dig @<NAME-SERVER-TO-QUERY> <FQDN> <RECORD-TYPE> -p <PORT> +noall +answer
+```
+
+
