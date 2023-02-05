@@ -10,3 +10,18 @@
 ▶ dig @<NAME-SERVER-TO-QUERY> -x <TARGET-IPv4/IPv6>
 ```
 
+### Digging Recursive DNS
+```
+▶ dig @<NAME-SERVER-TO-QUERY> <FQDN> <RECORD_TYPE> +nostat +noquestion +noadditional +noauthority +noedns 
+```
+
+### Digging Authoritative DNS
+```
+▶ dig @<NAME-SERVER-TO-QUERY> <FQDN> <RECORD_TYPE> +nostat +noquestion +noadditional +noauthority +noedns +norecurse
+```
+
+### Digging For Query Statistics
+```
+▶ dig @<NAME-SERVER-TO-QUERY> <FQDN> NS +noquestion +noanswer +noadditional +noauthority +noedns 
+```
+
