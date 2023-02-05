@@ -25,3 +25,8 @@
 ▶ dig @<NAME-SERVER-TO-QUERY> <FQDN> NS +noquestion +noanswer +noadditional +noauthority +noedns 
 ```
 
+### Digging for Zone Transfer
+```
+▶ dig @<NAME-SERVER-TO-QUERY> <FQDN> axfr 
+```
+
