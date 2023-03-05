@@ -12,7 +12,7 @@ Check `socket statistics` to know which ports are listening locally on a the tar
 
 ## Check Listening Ports with Service Name
 ```
-▶ ss -tln
+▶ ss -tl
 
 # -l : Display only listening sockets.
 # -t : Display TCP sockets.
