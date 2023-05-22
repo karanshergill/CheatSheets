@@ -11,13 +11,13 @@ The find command is a very versatile utility which allows to search for files an
 ---
 
 # Criteria
-  - Find files by name.
-  - Find files by extension.
-  - Find files by type.
-  - Find files by size.
-  - Find files by modification time.
-  - Find files by ownership.
-  - Find files by permissions.
-  - Find files based on group ownership.
-  - Find files by excluding certain directories.
-  - Find files by combining multiple criteria.
+  - Name
+  - Extension
+  - Type
+  - Size
+  - Modification Time
+  - Ownership
+  - Permissions
+  - Group Ownership
+  - Excluding Certain Directories
+  - Combining Multiple Criteria
