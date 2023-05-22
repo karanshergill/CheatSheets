@@ -11,6 +11,7 @@ The find command is a very versatile utility which allows to search for files an
 ---
 
 # Criteria
+Find **Files**:
   - Name
   - Extension
   - Type
@@ -21,3 +22,6 @@ The find command is a very versatile utility which allows to search for files an
   - Group Ownership
   - Excluding Certain Directories
   - Combining Multiple Criteria
+
+Find **Directories**:
+  - 
