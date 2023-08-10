@@ -1,2 +1,3 @@
 # Postgresql
 
+`\l` - List Databases
