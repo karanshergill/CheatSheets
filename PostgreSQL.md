@@ -76,4 +76,8 @@ nano /etc/postgresql/16/main/postgresql.conf
 ```
 ![image](https://github.com/karanshergill/CheatSheets/assets/83878909/bbba9fed-97eb-4641-aedf-693278806eec)
 
-- 
+- The `pg_hba.conf` should have the below configuration.
+```
+nano /etc/postgresql/16/main/pg_hba.conf
+```
+![image](https://github.com/karanshergill/CheatSheets/assets/83878909/88548d4f-727e-463d-93d9-1ec72069f995)
