@@ -86,3 +86,8 @@ nano /etc/postgresql/16/main/pg_hba.conf
 ```bash
 sudo service postgresql restart
 ```
+
+- Switch to User and Connect to Database
+```bash
+psql -d recondb -U pgdbuser
+```
