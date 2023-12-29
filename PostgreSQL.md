@@ -16,7 +16,7 @@ sudo su -l postgres
 ```
 
 - Change Password of User "postgres"
-```
+```bash
 psql -c "alter user postgres with password 'my00pass'"
 ```
 
@@ -26,12 +26,12 @@ sudo -u postgres psql
 ```
 
 - Restart PostgreSQL Service
-```
+```bash
 sudo service postgresql restart
 ```
 
 #### Create a Database User and Database
-```
+```bash
 postgres@msi:~$ createuser pgdbuser
 postgres@msi:~$ createdb recondb -O pgdbuser
 postgres@msi:~$ psql recondb
@@ -43,7 +43,7 @@ recondb=#
 ![image](https://github.com/karanshergill/CheatSheets/assets/83878909/37741607-69ea-4af1-819c-e3818a6584a6)
 
 - Change the Role and Password
-```
+```psql
 recondb=# alter user pgdbuser with password 'kali';
 ALTER ROLE
 recondb=# \q
@@ -52,7 +52,7 @@ postgres@msi:~$
 ![image](https://github.com/karanshergill/CheatSheets/assets/83878909/e72aa482-773f-4db1-a362-62d5136123c0)
 
 - List Databases
-```
+```bash
 postgres@msi:~$ psql -l
                                                    List of databases
    Name    |  Owner   | Encoding | Locale Provider | Collate |  Ctype  | ICU Locale | ICU Rules |   Access privileges
@@ -66,3 +66,14 @@ postgres@msi:~$ psql -l
 (4 rows)
 ```
 ![image](https://github.com/karanshergill/CheatSheets/assets/83878909/cee2bf05-b197-40ac-af54-2f740e70ac7e)
+
+
+#### Connect to PgAdmin
+- Modify the value of "listen_address" in `postgresql.conf` file.
+
+```bash
+nano /etc/postgresql/16/main/postgresql.conf
+```
+![image](https://github.com/karanshergill/CheatSheets/assets/83878909/bbba9fed-97eb-4641-aedf-693278806eec)
+
+- 
