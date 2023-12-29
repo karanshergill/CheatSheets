@@ -42,3 +42,11 @@ recondb=#
 ```
 ![image](https://github.com/karanshergill/CheatSheets/assets/83878909/37741607-69ea-4af1-819c-e3818a6584a6)
 
+- Change the Role and Password
+```
+recondb=# alter user pgdbuser with password 'kali';
+ALTER ROLE
+recondb=# \q
+postgres@msi:~$
+```
+![image](https://github.com/karanshergill/CheatSheets/assets/83878909/e72aa482-773f-4db1-a362-62d5136123c0)
