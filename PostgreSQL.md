@@ -10,6 +10,11 @@ sudo service postgresql start
 sudo -u postgres psql -c 'SHOW config_file'
 ```
 
+- Switch to User "postgres"
+```bash
+sudo su -l postgres
+```
+
 - Switch User and Logon to the PostgreSQL Command-Line
 ```bash
 sudo -u postgres psql
