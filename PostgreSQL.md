@@ -50,3 +50,19 @@ recondb=# \q
 postgres@msi:~$
 ```
 ![image](https://github.com/karanshergill/CheatSheets/assets/83878909/e72aa482-773f-4db1-a362-62d5136123c0)
+
+- List Databases
+```
+postgres@msi:~$ psql -l
+                                                   List of databases
+   Name    |  Owner   | Encoding | Locale Provider | Collate |  Ctype  | ICU Locale | ICU Rules |   Access privileges
+-----------+----------+----------+-----------------+---------+---------+------------+-----------+-----------------------
+ postgres  | postgres | UTF8     | libc            | C.UTF-8 | C.UTF-8 |            |           |
+ recondb   | pgdbuser | UTF8     | libc            | C.UTF-8 | C.UTF-8 |            |           |
+ template0 | postgres | UTF8     | libc            | C.UTF-8 | C.UTF-8 |            |           | =c/postgres          +
+           |          |          |                 |         |         |            |           | postgres=CTc/postgres
+ template1 | postgres | UTF8     | libc            | C.UTF-8 | C.UTF-8 |            |           | =c/postgres          +
+           |          |          |                 |         |         |            |           | postgres=CTc/postgres
+(4 rows)
+```
+![image](https://github.com/karanshergill/CheatSheets/assets/83878909/cee2bf05-b197-40ac-af54-2f740e70ac7e)
