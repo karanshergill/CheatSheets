@@ -81,3 +81,8 @@ nano /etc/postgresql/16/main/postgresql.conf
 nano /etc/postgresql/16/main/pg_hba.conf
 ```
 ![image](https://github.com/karanshergill/CheatSheets/assets/83878909/88548d4f-727e-463d-93d9-1ec72069f995)
+
+- Restart PostgreSQL
+```bash
+sudo service postgresql restart
+```
