@@ -29,3 +29,16 @@ sudo -u postgres psql
 ```
 sudo service postgresql restart
 ```
+
+#### Create a Database User and Database
+```
+postgres@msi:~$ createuser pgdbuser
+postgres@msi:~$ createdb recondb -O pgdbuser
+postgres@msi:~$ psql recondb
+psql (16.1 (Debian 16.1-1))
+Type "help" for help.
+
+recondb=#
+```
+![image](https://github.com/karanshergill/CheatSheets/assets/83878909/37741607-69ea-4af1-819c-e3818a6584a6)
+
