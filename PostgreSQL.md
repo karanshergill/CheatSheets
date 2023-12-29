@@ -14,3 +14,8 @@ sudo -u postgres psql -c 'SHOW config_file'
 ```bash
 sudo -u postgres psql
 ```
+
+- Restart PostgreSQL Service
+```
+sudo service postgresql restart
+```
