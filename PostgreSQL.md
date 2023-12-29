@@ -1,11 +1,11 @@
 ### PostgreSQL CheatSheet
 
 - Start PostgreSQL Server
-```shell
+```bash
 sudo service postgresql start
 ```
 
 - Switch User and Logon to the PostgreSQL Command-Line
-```shell
+```bash
 sudo -u postgres psql
 ```
